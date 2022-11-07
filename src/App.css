@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+
+* {
+    box-sizing: border-box;
+}
+
+#toggle-gens {
+    display: flex;
+    justify-content: center;
+}
+
+#toggle-gens button {
+    margin: 0.6rem 1rem 0 1rem;
+    padding: 1%;
+    font-weight: 600;
+    font-size: 1.4rem;
+    border: solid rgba(0, 0, 0, 0.2) 2px;
+    border-radius: 1rem;
+}
+
+#current-gen {
+    margin: 0.6rem 1rem 0 1rem;
+    padding: 1%;
+    font-weight: 600;
+    font-size: 1.4rem;
+    box-shadow: 0 0 4px rgba(255, 0, 0, 0.3);
+    border-radius: 1rem;
+}
+
+#toggle-gens button:hover {
+    box-shadow: 0 0 10px ;
+}
+
+h1.pokefont {
+    font-family: 'Pokemon Solid', sans-serif;
+    color: rgb(35, 135, 227);
+    text-align: center;
+    -webkit-text-stroke: 1px rgba(255, 0, 0, 0.3);
+    margin: 0 0;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.toggles {
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+}
+
+button#shiny {
+    align-items: stretch;
+}
+
+div.toggles button {
+    width: 15%;
+    margin: 0 1rem;
+    padding: 1%;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.pokemon {
+    width: 14%;
+    margin: 1% 1%;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: solid black 2px;
+    border-radius: 1rem;
+    background: url('/public/img/pokeball-background.png') center no-repeat;
+    background-size: cover;
+}
+
+.pokemon-background {
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.7);
+    overflow: hidden;
+    padding: 30% 1% 1% 1%;
+}
+
+.pokemon img {
+    width: 60%;
+}
+
+div.pokemon-name {
+    margin: 0.4rem auto;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-bottom: 3px dashed rgba(125, 0, 0, 0.3);
+    border-top: 3px dashed rgba(125, 0, 0, 0.3);
+}
+
+.pokemon-name {
+    text-transform: capitalize;
+}
+
+.types-div {
+    padding: 0.8rem auto;
+    margin: 4% auto;
+    display: flex;
+    justify-content: center;
+}
+
+.type {
+    border: solid black 1px;
+    padding: 1% 0.4rem;
+    margin: 1% 2%;
+    border-radius: 0.4rem;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fire {
+    background-color: rgb(255, 85, 0)
+}
+
+.grass {
+    background-color: rgb(75, 194, 60)
+}
+
+.water {
+    background-color: rgb(35, 135, 227)
+}
+
+.electric {
+    background-color: rgb(198, 198, 0)
+}
+
+.ice {
+    background-color: rgb(86, 221, 247)
+}
+
+.bug {
+    background-color: rgb(141, 228, 100)
+}
+
+.poison {
+    background-color: rgb(92, 21, 179)
+}
+
+.poison {
+    background-color: rgb(92, 21, 179)
+}
+
+.normal {
+    background-color: rgb(119, 119, 137)
+}
+
+.flying {
+    background-color: rgb(137, 137, 232)
+}
+
+.fairy {
+    background-color: rgb(251, 139, 233)
+}
+
+.ground {
+    background-color: rgb(101, 62, 16)
+}
+
+.rock {
+    background-color: rgb(56, 49, 42)
+}
+
+.fighting {
+    background-color: rgb(168, 107, 0)
+}
+
+.psychic {
+    background-color: rgb(142, 62, 216)
+}
+
+.ghost {
+    background-color: rgb(82, 51, 111)
+}
+
+.dark {
+    background-color: rgb(23, 3, 42)
+}
+
+.steel {
+    background-color: rgb(163, 162, 162)
+}
+
+.dragon {
+    background-color: rgb(112, 23, 6)
+}

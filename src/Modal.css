@@ -1,0 +1,86 @@
+/* The Modal (background) */
+.modal {
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1.pokemon-name {
+  margin: 0;
+  flex-grow: 1;
+}
+
+.type {
+  margin: 0 0.4rem !important;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #dedada;
+  margin: 5% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 10px double rgb(166, 75, 75);
+  border-radius: 3rem;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+
+.modal-container {
+  display: flex
+}
+
+.modal-container img {
+  justify-content: start;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-bottom {
+  display: flex;
+  justify-content: end
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+div.move-list {
+  display: flex;
+  align-content: stretch;
+  flex-flow: row wrap;
+}
+
+span.move {
+  margin: 0.2rem 0.4rem;
+  width: 15%;
+  text-transform: capitalize;
+}
