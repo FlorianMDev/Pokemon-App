@@ -1,5 +1,5 @@
 /* The Modal (background) */
-.modal {
+.css-modal {
   position: fixed;
   /* Stay in place */
   z-index: 1;
@@ -20,7 +20,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.modal-header {
+.css-modal-header {
   display: flex;
   justify-content: space-between;
 }
@@ -35,7 +35,7 @@ h1.pokemon-name {
 }
 
 /* Modal Content/Box */
-.modal-content {
+.css-modal-content {
   background-color: #dedada;
   margin: 5% auto;
   /* 15% from the top and centered */
@@ -46,11 +46,12 @@ h1.pokemon-name {
   /* Could be more or less, depending on screen size */
 }
 
-.modal-container {
-  display: flex
+.css-modal-container {
+  display: flex;
+  margin-top: 1rem;
 }
 
-.modal-container img {
+.css-modal-container img {
   justify-content: start;
 }
 

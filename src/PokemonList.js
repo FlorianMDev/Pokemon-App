@@ -11,12 +11,14 @@ const PokemonList = ({ pokemons, sprite, toggleSprite, shiny, toggleShiny }) => 
 
 
     useEffect(() => {
-        console.log('pokemon selectionné : ' + selectedPokemon.name);
         if (Object.keys(selectedPokemon).length) {
+            console.log('pokemon selectionné : ' + selectedPokemon.name);
             setOpen(true);
+
             return;
         }
         setOpen(false);
+
     }, [selectedPokemon]);
 
     function openModal(poke) {
@@ -28,9 +30,9 @@ const PokemonList = ({ pokemons, sprite, toggleSprite, shiny, toggleShiny }) => 
         setSelectedPokemon({});
     }
 
-    /* useEffect(() => {
+    useEffect(() => {
         console.log('Open : ' + open);
-    }, [open]) */
+    }, [open])
 
     return (
         <>
@@ -41,20 +43,20 @@ const PokemonList = ({ pokemons, sprite, toggleSprite, shiny, toggleShiny }) => 
             <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between" }}>
                 {pokemons.sort(function (a, b) { return a.id - b.id })
                     .map(p => (
-                        <div className="pokemon" key={p.name + "-class"}>
-                            <Pokemon
-                                pokemon={p}
-                                key={p.name + "#" + p.id}
-                                sprite={shiny ?
-                                    sprite === 'front' ? p.sprites.front_shiny : p.sprites.back_shiny
-                                    : sprite === 'front' ? p.sprites.front_default : p.sprites.back_default}
-                                id={p.id < 100
-                                    ? p.id >= 10
-                                        ? "0" + p.id
-                                        : "00" + p.id
-                                    : p.id}
-                                openModal={openModal} />
-                        </div>
+
+                        <Pokemon
+                            pokemon={p}
+                            key={p.name + "#" + p.id}
+                            sprite={shiny ?
+                                sprite === 'front' ? p.sprites.front_shiny : p.sprites.back_shiny
+                                : sprite === 'front' ? p.sprites.front_default : p.sprites.back_default}
+                            id={p.id < 100
+                                ? p.id >= 10
+                                    ? "0" + p.id
+                                    : "00" + p.id
+                                : p.id}
+                            openModal={openModal}
+                        />
                     ))
                 }
                 {open && <Modal
@@ -64,7 +66,8 @@ const PokemonList = ({ pokemons, sprite, toggleSprite, shiny, toggleShiny }) => 
                         ? selectedPokemon.id >= 10
                             ? "0" + selectedPokemon.id
                             : "00" + selectedPokemon.id
-                        : selectedPokemon.id} />}
+                        : selectedPokemon.id}
+                />}
             </div>
         </>
     );

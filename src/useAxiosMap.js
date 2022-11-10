@@ -32,7 +32,7 @@ export default function useAxiosMap({ mapTab, useEffectTrigger }) {
     }
 
     useEffect(() => {
-        if (useEffectTrigger?.length > 0) {
+        if (useEffectTrigger?.length) {
             fetchData();
         }
 
