@@ -28,9 +28,9 @@ const PokemonList = ({ pokemons, sprite, toggleSprite, shiny, toggleShiny }) => 
         setSelectedPokemon({});
     }
 
-    useEffect(() => {
+    /* useEffect(() => {
         console.log('Open : ' + open);
-    }, [open])
+    }, [open]) */
 
     return (
         <>
@@ -38,11 +38,7 @@ const PokemonList = ({ pokemons, sprite, toggleSprite, shiny, toggleShiny }) => 
                 <button onClick={() => toggleSprite(sprite)}>Front/Back sprites</button>
                 <button id="shiny" onClick={() => toggleShiny()}>Toggle Shiny</button>
             </div>
-            <div style={{
-                display: "flex",
-                alignItems: "stretch",
-                flexWrap: "wrap",
-            }}>
+            <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between" }}>
                 {pokemons.sort(function (a, b) { return a.id - b.id })
                     .map(p => (
                         <div className="pokemon" key={p.name + "-class"}>
